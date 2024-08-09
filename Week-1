@@ -1,0 +1,50 @@
+1)student.arff:
+@relation student
+
+@attribute age {<30,30-40,>40}
+@attribute income {low, medium, high}
+@attribute student {yes, no }
+@attribute credit-rating {fair, excellent }
+@attribute buyspc {yes, no}
+@data
+
+<30, high, no, fair, no
+<30, high, no, excellent, no
+30-40, high, no, fair, yes
+>40, medium, no, fair, yes
+>40, low, yes, fair, yes
+>40, low, yes, excellent, no
+30-40, low, yes, excellent, yes
+<30, medium, no, fair, no
+<30, low, yes, fair, no
+>40, medium, yes, fair, yes
+<30, medium, yes, excellent, yes
+30-40, medium, no, excellent, yes
+30-40, high, yes, fair, yes
+>40, medium, no, excellent, no
+---------------------------------------------------------
+2)weather.arff:
+@relation weather
+
+@attribute outlook{sunny,overcast,rainy}
+@attribute temperature real
+@attribute humidity real
+@attribute windy{TRUE,FALSE}
+@attribute play{yes,no}
+
+@data
+sunny,85,85,FALSE,no
+sunny,80,90,TRUE,no
+overcast,83,86,FALSE,yes
+rainy,70,96,FALSE,yes
+rainy,68,80,FALSE,yes
+rainy,65,70,TRUE,no
+overcast,64,65,TRUE,yes
+sunny,72,95,FALSE,no
+sunny,69,70,FALSE,yes
+rainy,75,80,FALSE,yes
+sunny,75,70,TRUE,yes
+overcast,72,90,TRUE,yes
+overcast,81,75,FALSE,yes
+rainy,71,91,TRUE,no
+
